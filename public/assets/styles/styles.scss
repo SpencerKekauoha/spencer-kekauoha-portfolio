@@ -1,0 +1,228 @@
+/*** imports ***/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+
+/*** defines ***/
+$height-span: 5px;
+$width-span: 35px;
+
+$height-gradient: 100vh;
+$navbar-height: 65px;
+
+$main-color: #E64D68;
+$main-color-inverse: #65A9BA;
+
+$trasparent-color: rgba(255,255,255,.1);
+$inverse-color: #F7F3EA;
+
+$def-color: #FFF;
+$int-color: #777;
+$act-color: #444;
+
+
+/*** general ***/
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*** menu full page ***/
+.hide {
+  display: none;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: hidden;
+  overflow: hidden;
+  transition: opacity .5s, visibility .35s, width .35s;
+
+	// Animation when nav is clicked.  coral color fades in
+
+  &:after {
+    content: '';
+    background: $main-color;
+    right: -200%;
+    top: -200%;
+    width: 200%;
+    height: 200%;
+    position: fixed;
+    border-radius: 100%;
+    transition: all .35s ease;
+  }
+
+	// Animation when nav is clicked.  Opens nav and list items fade in
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+
+    &:after {
+      right: 0;
+      top: 0;
+      border-radius: 0%;
+    }
+   li {
+      animation: fadeInRight .35s ease forwards;
+      animation-delay: .35s;
+
+      &:nth-of-type(2) {
+        animation-delay: .45s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: .55s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: .55s;
+      }
+    }
+  }
+
+	.menu-list {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  font-family: 'Lato', serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  z-index: 100;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+
+    li {
+      display: block;
+      height: 25%;
+      height: calc(100% / 4);
+      min-height: 50px;
+      position: relative;
+      opacity: 0;
+
+      a {
+        display: block;
+        position: relative;
+        color: $def-color;
+        text-decoration: none;
+        overflow: hidden;
+        padding: 8px 15px;
+        transition: all .5s;
+
+        &:hover:before,
+         &:focus:before,
+         &:active:before {
+           width: 120%;
+           height: 200%;
+           border-radius: 100%;
+           visibility: visible;
+         }
+
+        &:before {
+          content: '';
+
+          position: absolute;
+          bottom: -55%;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 0%;
+          background: $def-color;
+          transition: all .5s;
+          z-index: -1;
+          visibility: hidden;
+        }
+
+				&:hover{
+					color: black;
+				}
+      }
+    }
+  }
+}
+}
+
+
+/*** sandwich ***/
+.sandwich {
+  width: $width-span;
+  height: $height-span * 5;
+  top: 15px;
+  right: 18px;
+  position: absolute;
+  padding: 20px;
+  cursor: pointer;
+
+  & span {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: $width-span;
+    height: $height-span;
+    background-color: $main-color;
+    transition: all .35s;
+    z-index: 50;
+
+    &:nth-of-type(2) {
+      top: 30px;
+    }
+
+    &:nth-of-type(3) {
+      top: 40px;
+    }
+  }
+
+	// animates nav bar, changes from hamburger to X.
+
+  &.active {
+
+    .top {
+        transform: translateY(10px) translateX(0) rotate(45deg);
+        background: $main-color-inverse;
+    }
+
+    .middle {
+      opacity: 0;
+    }
+
+    .bottom {
+      transform: translateY(-10px) translateX(0) rotate(-45deg);
+      background: $main-color-inverse;
+    }
+  }
+}
+
+//sandwich ends
+
+
+
+@media (max-width: 768px){
+  .menu-list {
+    font-size: 40px;
+    li {
+      a {
+        padding: 8px 10px !important;
+      }
+    }
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
