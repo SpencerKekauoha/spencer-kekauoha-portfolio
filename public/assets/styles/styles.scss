@@ -1,5 +1,6 @@
 /*** imports ***/
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300,600);
 
 /*** defines ***/
 $height-span: 5px;
@@ -8,15 +9,19 @@ $width-span: 35px;
 $height-gradient: 100vh;
 $navbar-height: 65px;
 
-$main-color: #E64D68;
-$main-color-inverse: #65A9BA;
+$main-color: #29272d;
+$seconday-color: #fff600;
+$purp: #2d1e30;
 
 $trasparent-color: rgba(255,255,255,.1);
-$inverse-color: #F7F3EA;
+
 
 $def-color: #FFF;
 $int-color: #777;
 $act-color: #444;
+
+$font: 'Josefin Sans', sans-serif;
+
 
 
 /*** general ***/
@@ -39,7 +44,7 @@ $act-color: #444;
   overflow: hidden;
   transition: opacity .5s, visibility .35s, width .35s;
 
-	// Animation when nav is clicked.  coral color fades in
+	// Animation when nav is clicked, color fades in
 
   &:after {
     content: '';
@@ -86,7 +91,7 @@ $act-color: #444;
   top: 50%;
   transform: translateY(-50%);
   font-size: 50px;
-  font-family: 'Lato', serif;
+  font-family: $font;
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
@@ -187,7 +192,7 @@ $act-color: #444;
 
     .top {
         transform: translateY(10px) translateX(0) rotate(45deg);
-        background: $main-color-inverse;
+        background: #fff;
     }
 
     .middle {
@@ -196,7 +201,7 @@ $act-color: #444;
 
     .bottom {
       transform: translateY(-10px) translateX(0) rotate(-45deg);
-      background: $main-color-inverse;
+      background: #fff;
     }
   }
 }

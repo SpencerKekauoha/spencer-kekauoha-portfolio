@@ -1,4 +1,4 @@
-angular.module('portfolioApp').directive('navDirective', function(){
+angular.module('portfolioApp').directive('navDirective', function($state){
 
   return {
     restrict: 'A',
@@ -9,7 +9,9 @@ angular.module('portfolioApp').directive('navDirective', function(){
           $('#menu').toggleClass('open');
           $('main').toggleClass('hide');
       });
+      $('.menu-list').on('click', '.nav-link',  function(e){
+        $('#toggle-nav').trigger(e.type);
+      });
     }
   };
-
 });
