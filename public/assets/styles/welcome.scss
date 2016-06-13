@@ -1,9 +1,9 @@
 $color-cream: #F4F0E7;
-$font: 'Josefin Sans', sans-serif;
-$font-color: #333;
-$main-color: #29272d;
+$font: 'Alegreya Sans', sans-serif;
+$font-color: #fff;
+$main-red: #f7484e;
 $yello: #fff600;
-$purp: #333;
+$main-grey: #333;
 $transparent-color: rgba(51,51,51,.5);
 
 //////////////////
@@ -36,73 +36,6 @@ $transparent-color: rgba(51,51,51,.5);
       #logo {
         height: 80vh;
         width: 50vw;
-      }
-    }
-  }
-}
-
-//////////////////
-
-// WELCOME PROFILE
-
-////////////////
-
-.welcome-profile-section {
-  .welcome-profile-container {
-    display: flex;
-    justify-content: center;
-    .welcome-profile-info-container {
-      height: 100vh;
-      width: 100%;
-      display: flex;
-      justify-content: flex-start;
-
-      .welcome-profile-info {
-        border: 3px #333 solid;
-        width: 30vw;
-        height: 19vh;
-        margin: 100px;
-        padding: 10px;
-
-        h1 {
-          font-family: $font;
-          font-size: 40px;
-          font-weight: 600;
-          color: $font-color;
-        }
-        h2 {
-          font-family: $font;
-          font-size: 40px;
-          font-weight: 600;
-          color: $yello;
-        }
-
-        p {
-          width: 40vw;
-          margin-top: 10vh;
-          margin-bottom: -5vh;
-          font-family: $font;
-          font-size: 18px;
-          font-weight: 600;
-          color: $font-color;
-        }
-      }
-      .welcome-profile-image {
-        display: flex;
-
-        img {
-          height: 70vh;
-          margin-top: 15vh;
-          margin-left: 20vh;
-          background: rgba(255,255,255,1);
-          background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 37%, rgba(214,214,214,1) 80%, rgba(209,209,209,1) 89%);
-          background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(37%, rgba(236,236,236,1)), color-stop(80%, rgba(214,214,214,1)), color-stop(89%, rgba(209,209,209,1)));
-          background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 37%, rgba(214,214,214,1) 80%, rgba(209,209,209,1) 89%);
-          background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 37%, rgba(214,214,214,1) 80%, rgba(209,209,209,1) 89%);
-          background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 37%, rgba(214,214,214,1) 80%, rgba(209,209,209,1) 89%);
-          background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 37%, rgba(214,214,214,1) 80%, rgba(209,209,209,1) 89%);
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d1d1', GradientType=1 );
-        }
       }
     }
   }
@@ -179,53 +112,3 @@ $transparent-color: rgba(51,51,51,.5);
     }
   }
 }
-
-//////////////////
-
-// WELCOME GLANCE
-
-////////////////
-
-.welcome-glance-section{
-  .welcome-glance-info-container {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    .welcome-glance-info {
-      background-color: pink;
-      height: 50vh;
-      width: 50vw;
-    }
-    .welcome-glance-port {
-      background-color: blue;
-      height: 50vh;
-      width: 25vw;
-    }
-  }
-  .welcome-glance-port-container {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-
-
-/* hover tip */
-
-// #logo-container:hover:after {
-//   content: "Hover to Slow Motion";
-//   position: absolute;
-//   left: 0; right: 0; bottom: 1vh;
-//   color: black;
-//   text-align: center;
-//   text-transform: uppercase;
-//   letter-spacing: 0.5px;
-//   font: 700 9px/14px Tahoma, sans-serif;
-//   @include animation(tip 2.5s forwards);
-// }
-//
-// @include keyframes(tip) {
-//   0%, 100% { opacity: 0; }
-//   10%, 80% { opacity: 1; }
-// }

@@ -10,7 +10,13 @@ angular.module('portfolioApp', ['ui.router'])
 
     .state('portfolio', {
       url: '/portfolio',
-      templateUrl: './app/components/portfolio/portfolioTmpl.html'
+      templateUrl: './app/components/portfolio/portfolioTmpl.html',
+      controller: 'portfolioCtrl'
+    })
+
+    .state('about', {
+      url: '/about',
+      templateUrl: './app/components/about/aboutTmpl.html'
     })
 
     $urlRouterProvider.otherwise('/welcome');
