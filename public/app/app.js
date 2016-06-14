@@ -14,6 +14,12 @@ angular.module('portfolioApp', ['ui.router'])
       controller: 'portfolioCtrl'
     })
 
+    .state('yui', {
+      url: '/portfolio/yui',
+      templateUrl: './app/components/portfolio/yui/yuiTmpl.html',
+      controller: 'portfolioCtrl'
+    })
+
     .state('about', {
       url: '/about',
       templateUrl: './app/components/about/aboutTmpl.html'

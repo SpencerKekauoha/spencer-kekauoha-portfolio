@@ -85,7 +85,7 @@ $transparent-white: rgba(224, 224, 224,.7);
 
           a:hover {
             text-decoration: none;
-            color: $transparent-red;
+            color: $yello;
           }
         }
       }
@@ -104,7 +104,45 @@ $transparent-white: rgba(224, 224, 224,.7);
       background-repeat: no-repeat;
       z-index: 10;
 
+      div{
+        display: flex;
+        justify-content: center;
+        height: 55vh;
+        width: 60vw;
+        background-color: $transparent-color;
+        transition: all 0.35s ease;
+        opacity: 0;
+
+        p {
+          width: 30vh;
+          height: 10vh;
+          padding-top: 3vh;
+          align-self: center;
+          font-family: "Alegreya Sans", sans-serif;
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 3px;
+          text-align: center;
+          color: #fff;
+          border: 2px #fff solid;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+
+          a:hover {
+            text-decoration: none;
+            color: $yello;
+          }
+        }
+      }
+
+      div:hover {
+        opacity: 1;
+      }
     }
+
     .port-weather-container {
       height: 55vh;
       width: 60vw;
@@ -114,7 +152,45 @@ $transparent-white: rgba(224, 224, 224,.7);
       background-repeat: no-repeat;
       z-index: 10;
 
+      div{
+        display: flex;
+        justify-content: center;
+        height: 55vh;
+        width: 60vw;
+        background-color: $transparent-color;
+        transition: all 0.35s ease;
+        opacity: 0;
+
+        p {
+          width: 30vh;
+          height: 10vh;
+          padding-top: 3vh;
+          align-self: center;
+          font-family: "Alegreya Sans", sans-serif;
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 3px;
+          text-align: center;
+          color: #fff;
+          border: 2px #fff solid;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+
+          a:hover {
+            text-decoration: none;
+            color: $yello;
+          }
+        }
+      }
+
+      div:hover {
+        opacity: 1;
+      }
     }
+
     .port-domo-container {
       height: 55vh;
       width: 60vw;
@@ -124,6 +200,43 @@ $transparent-white: rgba(224, 224, 224,.7);
       background-repeat: no-repeat;
       z-index: 10;
 
+      div{
+        display: flex;
+        justify-content: center;
+        height: 55vh;
+        width: 60vw;
+        background-color: $transparent-color;
+        transition: all 0.35s ease;
+        opacity: 0;
+
+        p {
+          width: 30vh;
+          height: 10vh;
+          padding-top: 3vh;
+          align-self: center;
+          font-family: "Alegreya Sans", sans-serif;
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 3px;
+          text-align: center;
+          color: #fff;
+          border: 2px #fff solid;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+
+          a:hover {
+            text-decoration: none;
+            color: $yello;
+          }
+        }
+      }
+
+      div:hover {
+        opacity: 1;
+      }
     }
   }
 }

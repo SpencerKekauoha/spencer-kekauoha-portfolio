@@ -98,6 +98,62 @@ $transparent-white: rgba(224, 224, 224,.7);
 
 //////////////////
 
+// INTRO
+
+////////////////
+
+.intro-section {
+  display: flex;
+  flex-direction: row;
+
+  .intro-img-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 100vh;
+      margin-left: 0;
+    }
+  }
+  .intro-info-container {
+    align-self: center;
+    margin-left: -35vh;
+    border: 5px $main-red solid;
+    padding: 5vh;
+    z-index: -10;
+
+    h1 {
+      width: 30vh;
+      margin-left: 20vh;
+      margin-bottom: 2vh;
+      font-family: "Alegreya Sans", sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 1px;
+      color: #000;
+      color: $main-red;
+    }
+    p {
+      width: 30vh;
+      margin-left: 20vh;
+      font-family: "Alegreya Sans", sans-serif;
+      font-size: 12px;
+      font-weight: 100;
+      line-height: 20px;
+      letter-spacing: 1px;
+      color: #000;
+    }
+  }
+  .intro-tech-container {
+    
+  }
+}
+
+//////////////////
+
 // BW
 
 ////////////////
