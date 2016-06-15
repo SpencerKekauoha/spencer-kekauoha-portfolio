@@ -20,9 +20,28 @@ angular.module('portfolioApp', ['ui.router'])
       controller: 'portfolioCtrl'
     })
 
+    .state('hana', {
+      url: '/portfolio/hana',
+      templateUrl: './app/components/portfolio/hana/hanaTmpl.html',
+      controller: 'portfolioCtrl'
+    })
+
+    .state('weather', {
+      url: '/portfolio/weather',
+      templateUrl: './app/components/portfolio/weather/weatherTmpl.html',
+      controller: 'portfolioCtrl'
+    })
+
+    .state('domo', {
+      url: '/portfolio/domo',
+      templateUrl: './app/components/portfolio/domo/domoTmpl.html',
+      controller: 'portfolioCtrl'
+    })
+
     .state('about', {
       url: '/about',
-      templateUrl: './app/components/about/aboutTmpl.html'
+      templateUrl: './app/components/about/aboutTmpl.html',
+      controller: 'aboutCtrl'
     })
 
     $urlRouterProvider.otherwise('/welcome');
