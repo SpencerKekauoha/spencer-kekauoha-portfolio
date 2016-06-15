@@ -16,5 +16,5 @@ angular.module('portfolioApp').controller('portfolioCtrl', function($scope, $sta
     if (winScroll > $('.port-domo-container').offset().top - ($(window).height() / 2)) {
       $('.port-header').css('background-color', 'rgba(237,240,242,.5)');
     }
-  })
+  });
 });

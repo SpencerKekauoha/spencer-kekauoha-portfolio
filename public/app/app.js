@@ -44,6 +44,11 @@ angular.module('portfolioApp', ['ui.router'])
       controller: 'aboutCtrl'
     })
 
+    .state('contact', {
+      url: '/contact',
+      templateUrl: './app/components/contact/contactTmpl.html'
+    })
+
     $urlRouterProvider.otherwise('/welcome');
 
 
